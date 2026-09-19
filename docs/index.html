@@ -8,14 +8,18 @@
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
 .art{position:absolute;inset:0;height:640px;pointer-events:none;overflow:hidden;z-index:0}
 .art .wash{position:absolute;right:-140px;top:-120px;width:720px;height:620px;background:radial-gradient(closest-side,var(--wash),transparent 72%);filter:blur(28px)}
-.art .dot{position:absolute;right:140px;top:170px;width:190px;height:190px;border-radius:50%;background:var(--accent)}
-@media(max-width:820px){.art{height:420px}.art .wash{right:-220px;top:-160px;width:520px;height:460px}.art .dot{right:24px;top:96px;width:120px;height:120px}}
+.art .stone{position:absolute;right:110px;top:120px;width:300px;height:300px}
+.art .guides{position:absolute;inset:0;width:100%;height:100%}
+.dots{position:absolute;left:-28px;top:.35em;display:flex;flex-direction:column;gap:9px}.dots i{width:4px;height:4px;border-radius:50%;background:var(--fg);opacity:.7}
+.meta{display:grid;grid-template-columns:auto auto;gap:2px 18px;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 56px}
+.meta b{font-weight:600;color:var(--fg)}
+@media(max-width:820px){.art{height:420px}.art .wash{right:-220px;top:-160px;width:520px;height:460px}.art .stone{right:16px;top:70px;width:150px;height:150px}.dots{display:none}}
 main{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:72px 24px 96px}
 .kicker{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--fg);margin:0 0 18px}
 .kicker::before{content:"";display:block;width:120px;height:2px;background:var(--fg);margin-bottom:12px}
 .kicker span:last-child{color:var(--muted)}
-h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.02;letter-spacing:-.03em;font-weight:800;margin:0 0 18px;max-width:11ch}
-.note{color:var(--muted);margin:0 0 72px;max-width:44ch}
+h1{position:relative;font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.02;letter-spacing:-.03em;font-weight:800;margin:0 0 18px;max-width:11ch}
+.note{color:var(--muted);margin:0 0 26px;max-width:44ch}
 section{margin:0 0 54px}
 h2{display:flex;align-items:baseline;gap:18px;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;font-weight:600;color:var(--fg);margin:0 0 6px;padding-bottom:10px;border-bottom:2px solid var(--fg)}
 h2 .n{font-size:1.6rem;letter-spacing:-.02em;font-weight:800;line-height:1}
@@ -29,11 +33,19 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline;text-deco
 .live a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
 footer{margin-top:72px;padding-top:14px;border-top:2px solid var(--fg);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
 </style></head><body>
-<div class="art" aria-hidden="true"><div class="wash"></div><div class="dot"></div></div>
+<div class="art" aria-hidden="true"><div class="wash"></div>
+<svg class="guides" viewBox="0 0 1600 640" preserveAspectRatio="none" fill="none" stroke="#151517" stroke-opacity=".14" stroke-width="1">
+<path d="M0 520 C 400 470, 700 600, 1600 500"/><path d="M0 590 C 500 560, 900 640, 1600 560"/><line x1="1180" y1="0" x2="1180" y2="640" stroke-dasharray="2 8"/></svg>
+<svg class="stone" viewBox="0 0 400 400"><defs>
+<radialGradient id="sg" cx="34%" cy="28%" r="80%"><stop offset="0" stop-color="#d6d3cb"/><stop offset=".45" stop-color="#8f8f91"/><stop offset="1" stop-color="#1f1f21"/></radialGradient>
+<filter id="sn" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0"/></filter>
+<clipPath id="sc"><circle cx="200" cy="200" r="190"/></clipPath></defs>
+<circle cx="200" cy="200" r="190" fill="url(#sg)"/><rect width="400" height="400" clip-path="url(#sc)" filter="url(#sn)" opacity=".42"/></svg></div>
 <main>
 <p class="kicker"><span>Все лекции</span><span>ES · RU</span></p>
-<h1>Курс разработки видеоигр</h1>
+<h1><span class="dots"><i></i><i></i><i></i><i></i><i></i></span>Курс разработки видеоигр</h1>
 <p class="note">Лекции по каждому предмету одним видео на YouTube, с русской озвучкой в меню звука плеера. Доступ по ссылке.</p>
+<p class="meta"><span>Предметов</span><b>35</b><span>Полугодий</span><b>6</b><span>Языки</span><b>ES · RU</b></p>
 <section><h2><span class="n">01</span> полугодие</h2><ul><li class="">Логика программирования</li><li class="">Цифровая обработка изображений I</li><li class="">Введение в геймдизайн</li><li class="">2D-анимация для видеоигр</li><li class="">Основы математики</li><li class="">Концептуальная иллюстрация</li></ul></section><section><h2><span class="n">02</span> полугодие</h2><ul><li class="">Программирование I</li><li class="">Построение сценария</li><li class="">3D-моделирование</li><li class="">Графический дизайн</li><li class="">Математический анализ и статистика</li><li class="">Цифровая обработка изображений II</li></ul></section><section><h2><span class="n">03</span> полугодие</h2><ul><li class="">Практика: игровые движки I</li><li class="">Прикладная физика</li><li class="">Дизайн и производство игр</li><li class="on">Анимация и моделирование персонажей</li><li class="">Психология развлечений</li><li class="">Программирование II</li></ul></section><section><h2><span class="n">04</span> полугодие</h2><ul><li class="on v"><a href="https://youtu.be/gimzp3_j238">Модели и алгоритмы I</a> <span class="dur">7 ч 48 мин</span> <span class="live"><a href="https://www.youtube.com/playlist?list=PLfUCyj72xzGc">живые занятия</a></span></li><li class="">Практика: игровые движки II</li><li class="on">Визуальные эффекты <span class="live"><a href="https://www.youtube.com/playlist?list=PLfB6wzOuLDGY">живые занятия</a></span></li><li class="on">Искусственный интеллект I <span class="live"><a href="https://www.youtube.com/playlist?list=PLcG_PrKlxukc">живые занятия</a></span></li><li class="">Пространственная геометрия</li><li class="">Дизайн уровней</li></ul></section><section><h2><span class="n">05</span> полугодие</h2><ul><li class="">Сетевая разработка</li><li class="on">Окружения и интерфейсы <span class="live"><a href="https://www.youtube.com/playlist?list=PLcuEOKYtmsBU">живые занятия</a></span></li><li class="">Искусственный интеллект II</li><li class="">Практика: стратегии и тактики</li><li class="">Программирование в движках I</li><li class="">Модели и алгоритмы II</li></ul></section><section><h2><span class="n">06</span> полугодие</h2><ul><li class="">Практика: производство цифровых ресурсов</li><li class="">Программирование в движках II</li><li class="">Этика и профессиональная деонтология</li><li class="">Дипломный проект</li><li class="">Постпродакшн видеоигр</li></ul></section>
 <footer>Личный учебный архив</footer>
 </main></body></html>
