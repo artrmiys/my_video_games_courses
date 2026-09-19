@@ -1,13 +1,40 @@
 {
-  "title": "Diseño de Videojuegos — Da Vinci",
-  "subtitle": "Clases grabadas de la carrera, con doblaje automático al ruso. Acceso solo por enlace.",
-  "subjects": [
-    {"code": "04_01", "name": "Modelos y Algoritmos I", "cuatrimestre": 4,
-     "youtube_ru": "", "youtube_es": "gimzp3_j238", "playlist": "PLfUCyj72xzGc"},
-    {"code": "04_04", "name": "Inteligencia Artificial I", "cuatrimestre": 4,
-     "youtube_ru": "", "youtube_es": "gIorjqu5X2s", "playlist": "PLcG_PrKlxukc"},
-    {"code": "04_03", "name": "Efectos Visuales", "cuatrimestre": 4, "playlist": "PLfB6wzOuLDGY"},
-    {"code": "05_02", "name": "Escenarios e Interfaces", "cuatrimestre": 5, "playlist": "PLcuEOKYtmsBU"},
-    {"code": "03_04", "name": "Animación y Modelado de Personajes", "cuatrimestre": 3}
-  ]
+ "title": "Diseño de Videojuegos — Da Vinci",
+ "subtitle": "Clases grabadas de la carrera, con doblaje automático al ruso. Acceso solo por enlace.",
+ "subjects": [
+  {
+   "code": "04_01",
+   "name": "Modelos y Algoritmos I",
+   "cuatrimestre": 4,
+   "youtube_ru": "",
+   "youtube_es": "gimzp3_j238",
+   "playlist": "PLfUCyj72xzGc"
+  },
+  {
+   "code": "04_04",
+   "name": "Inteligencia Artificial I",
+   "cuatrimestre": 4,
+   "youtube_ru": "",
+   "youtube_es": "gIorjqu5X2s",
+   "playlist": "PLcG_PrKlxukc"
+  },
+  {
+   "code": "04_03",
+   "name": "Efectos Visuales",
+   "cuatrimestre": 4,
+   "playlist": "PLfB6wzOuLDGY"
+  },
+  {
+   "code": "05_02",
+   "name": "Escenarios e Interfaces",
+   "cuatrimestre": 5,
+   "playlist": "PLcuEOKYtmsBU"
+  },
+  {
+   "code": "03_04",
+   "name": "Animación y Modelado de Personajes",
+   "cuatrimestre": 3,
+   "youtube_es": "CrqQW2eK4fU"
+  }
+ ]
 }
