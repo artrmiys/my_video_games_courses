@@ -6,14 +6,12 @@
 :root{--bg:#f3f1ec;--fg:#151517;--muted:#77777a;--line:#d9d6cd;--accent:#d62e24;--wash:rgba(120,120,122,.28)}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
-.art{position:absolute;inset:0;height:640px;pointer-events:none;overflow:hidden;z-index:0}
-.art .wash{position:absolute;right:-140px;top:-120px;width:720px;height:620px;background:radial-gradient(closest-side,var(--wash),transparent 72%);filter:blur(28px)}
-.art .stone{position:absolute;right:90px;top:90px;width:300px;height:345px}
-.art .guides{position:absolute;inset:0;width:100%;height:100%}
+.art{position:absolute;inset:0;height:720px;pointer-events:none;overflow:hidden;z-index:0}
+.art img{position:absolute;right:0;top:0;width:min(62vw,1000px);height:auto;display:block}
 .dots{position:absolute;left:-28px;top:.35em;display:flex;flex-direction:column;gap:9px}.dots i{width:4px;height:4px;border-radius:50%;background:var(--fg);opacity:.7}
 .meta{display:grid;grid-template-columns:auto auto;gap:2px 18px;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 56px}
 .meta b{font-weight:600;color:var(--fg)}
-@media(max-width:820px){.art{height:420px}.art .wash{right:-220px;top:-160px;width:520px;height:460px}.art .stone{right:12px;top:60px;width:140px;height:161px}.dots{display:none}}
+@media(max-width:820px){.art{height:360px}.art img{width:78vw;right:-10vw}.dots{display:none}}
 main{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:72px 24px 96px}
 .kicker{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--fg);margin:0 0 18px}
 .kicker::before{content:"";display:block;width:120px;height:2px;background:var(--fg);margin-bottom:12px}
@@ -33,20 +31,7 @@ a{color:inherit;text-decoration:none}a:hover{text-decoration:underline;text-deco
 .live a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
 footer{margin-top:72px;padding-top:14px;border-top:2px solid var(--fg);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
 </style></head><body>
-<div class="art" aria-hidden="true"><div class="wash"></div>
-<svg class="guides" viewBox="0 0 1600 640" preserveAspectRatio="none" fill="none" stroke="#151517" stroke-opacity=".14" stroke-width="1">
-<path d="M0 520 C 400 470, 700 600, 1600 500"/><path d="M0 560 C 420 520, 760 620, 1600 540"/><path d="M0 600 C 500 570, 900 640, 1600 580"/><path d="M900 640 C 1050 560, 1250 610, 1600 470" stroke-opacity=".22"/><line x1="1180" y1="0" x2="1180" y2="640" stroke-dasharray="2 8"/></svg>
-<svg class="stone" viewBox="0 0 400 460"><defs>
-<linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6e3dc"/><stop offset=".55" stop-color="#a3a2a0"/><stop offset="1" stop-color="#3b3b3d"/></linearGradient>
-<filter id="pn" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .8 0"/></filter>
-<clipPath id="p1"><path d="M40 118C22 70 96 22 190 26c98 4 182 40 176 96-6 60-92 92-186 88C90 206 54 164 40 118z"/></clipPath>
-<clipPath id="p2"><path d="M96 262c-6-38 50-72 128-70 74 2 132 30 126 70-6 42-74 66-142 62-60-4-108-26-112-62z"/></clipPath>
-<clipPath id="p3"><path d="M150 388c0-24 30-42 64-40 34 2 60 20 58 42-2 24-34 38-66 36-30-2-56-16-56-38z"/></clipPath>
-</defs>
-<g><rect width="400" height="460" clip-path="url(#p1)" fill="url(#pg)"/><rect width="400" height="460" clip-path="url(#p1)" filter="url(#pn)" opacity=".38"/></g>
-<g><rect width="400" height="460" clip-path="url(#p2)" fill="url(#pg)"/><rect width="400" height="460" clip-path="url(#p2)" filter="url(#pn)" opacity=".38"/></g>
-<g><rect width="400" height="460" clip-path="url(#p3)" fill="url(#pg)"/><rect width="400" height="460" clip-path="url(#p3)" filter="url(#pn)" opacity=".38"/></g>
-</svg></div>
+<div class="art" aria-hidden="true"><img src="art/terrain.png" alt=""></div>
 <main>
 <p class="kicker"><span>Все лекции</span><span>ES · RU</span></p>
 <h1><span class="dots"><i></i><i></i><i></i><i></i><i></i></span>Курс разработки видеоигр</h1>
