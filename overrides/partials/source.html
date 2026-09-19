@@ -1,0 +1,13 @@
+{#-
+  Keep the repository link in the header without Material's live GitHub stats
+  request. Repos without releases trigger a browser 404 on releases/latest.
+-#}
+<a href="{{ config.repo_url }}" title="{{ lang.t('source') }}" class="kb-source">
+  <div class="kb-source__icon md-icon">
+    {% set icon = config.theme.icon.repo or "fontawesome/brands/git-alt" %}
+    {% include ".icons/" ~ icon ~ ".svg" %}
+  </div>
+  <div class="kb-source__repository">
+    {{ config.repo_name }}
+  </div>
+</a>

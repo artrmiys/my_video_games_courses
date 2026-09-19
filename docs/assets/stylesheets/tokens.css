@@ -1,0 +1,146 @@
+/* ==========================================================================
+   OurCore Design Code v0.2 — shared tokens  ·  prefix: ds-*
+   --------------------------------------------------------------------------
+   Единый дизайн-код трёх инструментов (Knowledge Base, Pay, takeoff-app).
+
+   Закон цвета (строго два акцента + статусы):
+     • BLUE  (#2f7fd6 / #4ea1ff)  = «выбрано»: активная вкладка, ссылка,
+                                     selected row, primary CTA, info-leader.
+     • SAGE  (#6fa37c / #8fb89a)  = бренд OurCore: 1.5-px полоска под активным,
+                                     left-border активного пункта, маркеры списков,
+                                     tip-callout, logo glyph. Никогда не заливаем.
+     • Ничего ядовито-зелёного / неонового / gradient-mesh.
+     • Цифры — JetBrains Mono, tabular.
+     • Тёмная И светлая тема — обе первоклассные (dark-first по духу).
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* --- Акценты ----------------------------------------------------------- */
+  --ds-info:        #1f9e38;   /* GREEN = бренд/active/ссылка (на светлом) */
+  --ds-info-soft:   rgba(31,158,56,0.10);
+  --ds-info-line:   rgba(31,158,56,0.32);
+
+  --ds-sage:        #2e7d32;   /* тёмно-зелёный brand-маркер (узко) */
+  --ds-sage-soft:   rgba(46,125,50,0.12);
+  --ds-sage-line:   rgba(46,125,50,0.35);
+
+  /* обратная совместимость со старыми именами (всё → новый закон) */
+  --ds-blue:        var(--ds-info);
+  --ds-blue-dark:   var(--ds-info);
+  --ds-blue-light:  #4ea1ff;
+  --ds-blue-soft:   var(--ds-info-soft);
+  --ds-green:       var(--ds-sage);
+  --ds-green-dark:  var(--ds-sage);
+  --ds-green-darker:#588a64;
+  --ds-green-soft:  var(--ds-sage-soft);
+  --ds-accent:      var(--ds-sage);
+  --ds-accent-soft: var(--ds-sage-soft);
+  --ds-link:        var(--ds-info);
+  --ds-link-soft:   var(--ds-info-soft);
+
+  /* --- Статусы ----------------------------------------------------------- */
+  --ds-ok:      #2e9e63;
+  --ds-warn:    #c68a1a;
+  --ds-err:     #d6553f;
+  --ds-success: var(--ds-ok);
+  --ds-warning: var(--ds-warn);
+  --ds-danger:  var(--ds-err);
+  --ds-info-status: var(--ds-info);
+
+  /* --- Маркеры takeoff (канвас takeoff-app) ------------------------------ */
+  --ds-mk-line:  #1a5ba8;
+  --ds-mk-area:  #6a4fb6;
+  --ds-mk-joist: #1b7a60;
+  --ds-mk-count: #b83276;
+
+  /* --- Форма ------------------------------------------------------------- */
+  --ds-radius:      10px;   /* карточки, панели, таблицы            */
+  --ds-radius-sm:   5px;    /* inline-код, kbd, чипы                */
+  --ds-radius-lg:   14px;
+  --ds-radius-pill: 999px;
+
+  --ds-shadow-sm: 0 1px 2px rgba(16,28,46,0.06), 0 1px 3px rgba(16,28,46,0.05);
+  --ds-shadow-md: 0 4px 14px rgba(16,28,46,0.10);
+  --ds-shadow-lg: 0 14px 40px rgba(16,28,46,0.16);
+
+  /* --- Типографика ------------------------------------------------------- */
+  --ds-font-text: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --ds-font-mono: "JetBrains Mono", "Consolas", ui-monospace, monospace;
+
+  /* --- Нейтральная рампа: СВЕТЛАЯ (KB-вариант) --------------------------- */
+  --ds-bg:        #ffffff;
+  --ds-surface:   #f7f8fa;
+  --ds-surface-2: #f1f4f8;
+  --ds-line:      #e6e9ee;
+  --ds-line-soft: #eef1f4;
+  --ds-text:      #1a2330;
+  --ds-text-2:    #4a5666;
+  --ds-text-3:    #7a8694;
+  --ds-text-4:    #a8b1bd;
+  --ds-code-bg:   #f1f3f6;
+
+  /* ---- Material mapping (light) ---------------------------------------- */
+  --md-text-font: "Inter";
+  --md-code-font: "JetBrains Mono";
+
+  --md-primary-fg-color:        var(--ds-info);
+  --md-primary-fg-color--light: #45c25f;
+  --md-primary-fg-color--dark:  #18802d;
+  --md-accent-fg-color:         var(--ds-info);
+
+  --md-typeset-a-color:         var(--ds-info);
+  --md-default-bg-color:        var(--ds-bg);
+  --md-default-fg-color:        var(--ds-text);
+  --md-default-fg-color--light:    rgba(26,35,48,0.62);
+  --md-default-fg-color--lighter:  rgba(26,35,48,0.34);
+  --md-default-fg-color--lightest: rgba(26,35,48,0.10);
+  --md-code-bg-color:           var(--ds-code-bg);
+  --md-code-fg-color:           var(--ds-text);
+}
+
+/* --- Нейтральная рампа: ТЁМНАЯ (master) --------------------------------- */
+[data-md-color-scheme="slate"],
+.theme-dark,
+[data-theme="dark"] {
+  --ds-info:        #2ad24b;   /* GREEN bright на тёмном */
+  --ds-info-soft:   rgba(42,210,75,0.16);
+  --ds-info-line:   rgba(42,210,75,0.34);
+
+  --ds-sage:        #56e070;
+  --ds-sage-soft:   rgba(42,210,75,0.12);
+  --ds-sage-line:   rgba(42,210,75,0.32);
+
+  --ds-blue-light:  #4ea1ff;
+  --ds-green-darker:#7aa886;
+
+  --ds-ok:   #4dcc8b;
+  --ds-warn: #f0b34d;
+  --ds-err:  #f06b5a;
+
+  --ds-bg:        #0a0f17;
+  --ds-surface:   #0f1724;
+  --ds-surface-2: #15212f;
+  --ds-line:      #1d2a3a;
+  --ds-line-soft: #182434;
+  --ds-text:      #e7ecf2;
+  --ds-text-2:    #9faabb;
+  --ds-text-3:    #6c7888;
+  --ds-text-4:    #4a5564;
+  --ds-code-bg:   #121b27;
+
+  --md-primary-fg-color:        var(--ds-info);
+  --md-primary-fg-color--light: #56e070;
+  --md-primary-fg-color--dark:  #1f9e38;
+  --md-accent-fg-color:         var(--ds-info);
+
+  --md-typeset-a-color:         var(--ds-info);
+  --md-default-bg-color:        var(--ds-bg);
+  --md-default-fg-color:        var(--ds-text);
+  --md-default-fg-color--light:    rgba(231,236,242,0.66);
+  --md-default-fg-color--lighter:  rgba(231,236,242,0.36);
+  --md-default-fg-color--lightest: rgba(231,236,242,0.12);
+  --md-code-bg-color:           var(--ds-code-bg);
+  --md-code-fg-color:           var(--ds-text);
+}
