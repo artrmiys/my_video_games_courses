@@ -8,7 +8,10 @@
    "cuatrimestre": 4,
    "youtube_ru": "",
    "youtube_es": "gimzp3_j238",
-   "playlist": "PLfUCyj72xzGc"
+   "playlist": "PLfUCyj72xzGc",
+   "apps": [
+    "Unity"
+   ]
   },
   {
    "code": "04_04",
@@ -16,7 +19,10 @@
    "cuatrimestre": 4,
    "youtube_ru": "",
    "youtube_es": "gIorjqu5X2s",
-   "playlist": "PLcG_PrKlxukc"
+   "playlist": "PLcG_PrKlxukc",
+   "apps": [
+    "Unity"
+   ]
   },
   {
    "code": "04_03",
@@ -34,49 +40,74 @@
    "code": "03_04",
    "name": "Animación y Modelado de Personajes",
    "cuatrimestre": 3,
-   "youtube_es": "CrqQW2eK4fU"
+   "youtube_es": "CrqQW2eK4fU",
+   "apps": [
+    "ZBrush",
+    "Maya",
+    "Marmoset Toolbag"
+   ]
   },
   {
    "code": "01_01",
    "name": "Lógica De Programación",
    "cuatrimestre": 1,
    "youtube_ru": "",
-   "youtube_es": "fgR0ETXkiZg"
+   "youtube_es": "fgR0ETXkiZg",
+   "apps": [
+    "Unity"
+   ]
   },
   {
    "code": "01_04",
    "name": "Animación 2D para Videojuegos",
    "cuatrimestre": 1,
    "youtube_ru": "",
-   "youtube_es": "ZawezDs6-0E"
+   "youtube_es": "ZawezDs6-0E",
+   "apps": [
+    "DragonBones",
+    "Photoshop"
+   ]
   },
   {
    "code": "01_06",
    "name": "Ilustración Conceptual",
    "cuatrimestre": 1,
    "youtube_ru": "",
-   "youtube_es": "xgeHxiVB_qM"
+   "youtube_es": "xgeHxiVB_qM",
+   "apps": [
+    "Photoshop"
+   ]
   },
   {
    "code": "02_01",
    "name": "Programación I",
    "cuatrimestre": 2,
    "youtube_ru": "",
-   "youtube_es": "xFIhP1hA8_s"
+   "youtube_es": "xFIhP1hA8_s",
+   "apps": [
+    "Unity"
+   ]
   },
   {
    "code": "02_03",
    "name": "Modelado 3D",
    "cuatrimestre": 2,
    "youtube_ru": "",
-   "youtube_es": "gLYpKsOlZko"
+   "youtube_es": "gLYpKsOlZko",
+   "apps": [
+    "Maya",
+    "Substance Painter"
+   ]
   },
   {
    "code": "02_02",
    "name": "Construcción del Guión",
    "cuatrimestre": 2,
    "youtube_ru": "",
-   "youtube_es": "Yw6ELapvXRc"
+   "youtube_es": "Yw6ELapvXRc",
+   "apps": [
+    "Twine"
+   ]
   },
   {
    "code": "01_02",
@@ -86,6 +117,9 @@
    "youtube_es": [
     "VY8KmWpswE0",
     "qHTGFHq-7co"
+   ],
+   "apps": [
+    "Photoshop"
    ]
   },
   {
@@ -96,6 +130,9 @@
    "youtube_es": [
     "Vll0YyFCJ08",
     "tZo6H21ErHQ"
+   ],
+   "apps": [
+    "Construct 2"
    ]
   },
   {
@@ -103,14 +140,20 @@
    "name": "PP - Aplicación de Motores I",
    "cuatrimestre": 3,
    "youtube_ru": "",
-   "youtube_es": "yGnTajMfoE8"
+   "youtube_es": "yGnTajMfoE8",
+   "apps": [
+    "Unity"
+   ]
   },
   {
    "code": "02_06",
    "name": "Tratamiento Digital de la Imagen II",
    "cuatrimestre": 2,
    "youtube_ru": "",
-   "youtube_es": "GUMIyGXY1eU"
+   "youtube_es": "GUMIyGXY1eU",
+   "apps": [
+    "Photoshop"
+   ]
   },
   {
    "code": "03_03",
@@ -124,14 +167,20 @@
    "name": "Programación II",
    "cuatrimestre": 3,
    "youtube_ru": "",
-   "youtube_es": "muHuGG7HPXE"
+   "youtube_es": "muHuGG7HPXE",
+   "apps": [
+    "Unity"
+   ]
   },
   {
    "code": "04_02",
    "name": "PP - Aplicación de Motores II",
    "cuatrimestre": 4,
    "youtube_ru": "",
-   "youtube_es": "Q3xRrNuXQbc"
+   "youtube_es": "Q3xRrNuXQbc",
+   "apps": [
+    "Unity"
+   ]
   },
   {
    "code": "03_05",
@@ -145,7 +194,10 @@
    "name": "Diseño Gráfico",
    "cuatrimestre": 2,
    "youtube_ru": "",
-   "youtube_es": "Uf-9NiUtM1w"
+   "youtube_es": "Uf-9NiUtM1w",
+   "apps": [
+    "Substance Painter"
+   ]
   }
  ]
 }
